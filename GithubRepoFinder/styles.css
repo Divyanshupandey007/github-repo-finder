@@ -1,0 +1,124 @@
+body {
+    background:#243133;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  #loader {
+    display: none;
+  }
+  
+  .loading-animation {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .user-profile {
+    margin-top: 20px;
+  }
+  
+  .user-profile img {
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .user-profile img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  .user-profile h3 {
+      cursor: pointer;
+      transition: color 0.3s;
+  }
+  
+  .user-profile h3:hover {
+      color: #3498db;
+  }
+  
+  .form-group {
+    margin-top: 20px;
+  }
+  
+  button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background: #218838;
+    transform: scale(1.02);
+  }
+  
+  .repository-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .repository {
+    overflow: auto;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #000000;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    background-color: #797b48;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    scrollbar-width: thin;
+    scrollbar-color: #797b48 transparent;
+  }
+  
+  .repository::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  
+  .repository::-webkit-scrollbar-thumb {
+    background-color: #797b48;
+  }
+  
+
+  .repository:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .repository strong {
+    color: #ffffff;
+  }
+  
+  .language-box {
+    display: inline-block;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
